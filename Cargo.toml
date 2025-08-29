@@ -1,0 +1,31 @@
+[package]
+name = "boost_icl"
+description = "Boost C++ library boost_icl packaged using Zanbil"
+version = "0.1.0"
+edition = "2024"
+links = "boost_icl"
+license = "BSL-1.0"
+repository = "https://github.com/zanbilify/boost_icl"
+
+[package.metadata.zanbil]
+make_dependencies_public = true
+
+[dependencies]
+boost_assert = { version = "0.1.0", path = "../boost_assert" }
+boost_concept_check = { version = "0.1.0", path = "../boost_concept_check" }
+boost_config = { version = "0.1.0", path = "../boost_config" }
+boost_container = { version = "0.1.0", path = "../boost_container" }
+boost_core = { version = "0.1.0", path = "../boost_core" }
+boost_date_time = { version = "0.1.0", path = "../boost_date_time" }
+boost_detail = { version = "0.1.0", path = "../boost_detail" }
+boost_iterator = { version = "0.1.0", path = "../boost_iterator" }
+boost_move = { version = "0.1.0", path = "../boost_move" }
+boost_mpl = { version = "0.1.0", path = "../boost_mpl" }
+boost_range = { version = "0.1.0", path = "../boost_range" }
+boost_rational = { version = "0.1.0", path = "../boost_rational" }
+boost_static_assert = { version = "0.1.0", path = "../boost_static_assert" }
+boost_type_traits = { version = "0.1.0", path = "../boost_type_traits" }
+boost_utility = { version = "0.1.0", path = "../boost_utility" }
+
+[build-dependencies]
+zanbil-boost-build = "0.1.0"
